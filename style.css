@@ -1,0 +1,774 @@
+@font-face {
+    font-family: font1;
+    src: url(font1.woff2);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(font2.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #101214;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color:#101214;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 1s;
+  }
+  #loader h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ECEEF2;
+    z-index: 10;
+    top: 42%;
+    position: absolute;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font1;
+    word-spacing: 5px;
+    animation-name: anime4;
+    animation-duration: 0.2s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+   animation-direction:alternate;
+}
+@keyframes anime4{
+    from{
+      top: 43%;
+
+    }
+    to{
+        top: 42%;
+    }
+}
+#page1 {
+    height: 100vh;
+    width: 100wh;
+    background-color: #101214;
+    position: relative;
+}
+
+#nav {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    margin-left: 68px;
+}
+
+#navpart1 button {
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 70px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    font-family: font2;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#navpart1 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+} 
+svg {
+    width: 60;
+    height: 24;
+    fill: white;
+
+}
+
+#navpart2 button {
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 90px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    font-family: font2;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#navpart2 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+} 
+
+#contant {
+    height: 80vh;
+    width: 88%;
+    border-radius: 50px;
+    /* background-color: red; */
+    margin-left: 68px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+#contant video {
+    object-fit: cover;
+    background-size: cover;
+    z-index: 9;
+}
+
+#contant h4 {
+    opacity: 0;
+    top: 25%;
+    left: 23%;
+    position: absolute;
+    font-size: 100px;
+    font-weight: 400;
+    color: #ECEEF2;
+    z-index: 10;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font1;
+    word-spacing: 5px;
+}
+
+/*  page2 */
+
+#page2 {
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+
+#page2 h1 {
+    top: 18%;
+    left: 30%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 400;
+    color: #ECEEF2;
+    z-index: 10;
+    /* text-transform: uppercase; */
+    text-align-last: center;
+    font-family: font1;
+    /* letter-spacing: 5px; */
+}
+#page2 p{
+    top: 65%;
+    left: 24%;
+    position: absolute;
+    font-size: 17px;
+    color: #ECEEF2;
+    text-align-last: center;
+    font-family: font2;
+}
+#page2 button{
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 120px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    top: 90%;
+    left: 44%;
+    position: absolute;
+    font-family: font2;
+    cursor: pointer;
+    overflow: hidden;
+}#page2 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+} 
+#g {
+    height: 60px;
+    width: 40px;
+    border-radius: 10px;
+}
+#g:hover{
+    scale: 2;
+}
+#v {
+    height: 60px;
+    width: 40px;
+    border-radius: 10px;
+}
+#v:hover{
+    scale: 2;
+}
+#k {
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+}
+#k:hover{
+    scale: 2;
+}
+      /* page3 */ 
+#page3{
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+#line {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    overflow-x: auto;
+    white-space: nowrap;
+    rotate: -2deg;
+}
+
+#line::-webkit-scrollbar {
+    display: none;
+}
+
+#line img {
+    height: 100%;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 15px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@keyframes anime {
+    from {
+        left: 0%;
+
+    }
+
+    to {
+        left: -50%;
+    }
+}
+#line2 {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    overflow-x: auto;
+    white-space: nowrap;
+    rotate: -2deg;
+}
+
+#line2::-webkit-scrollbar {
+    display: none;
+}
+
+#line2 img {
+    height: 100%;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 15px;
+    position: relative;
+    animation-name: anime2;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes anime2 {
+    from {
+        left: -50%;
+
+    }
+    to {
+        left: 0%;
+    }
+}
+ /* page 4 */
+#page4{
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+#page4 h4{
+    top:50%;
+    left: 38%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 400;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font1;
+    word-spacing: 5px;
+}
+#page4 button{
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 120px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    top:65%;
+    left: 45%;
+    position: absolute;
+    font-family: font2;
+    cursor: pointer;
+    overflow: hidden;
+ }
+ #page4 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+} 
+ #page4 #card1{
+    top:15%;
+    left: 12%;
+    position: absolute;
+   height: 500px;
+   width: 500px;
+   border-radius: 30px;
+   background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/647e41c06815da66525f5194_Greenland%201-p-1080.jpg);
+   background-size: cover;
+ }
+ #page4 #card2{
+    top:15%;
+    right: 15%;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/647e3ccc6c2ce83328c9b669_Header%202%20Right-p-800.jpg);
+    background-size: cover;
+  }
+  #page4 h6{
+    top:20%;
+    left: 47%;
+    position: absolute;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font2;
+    word-spacing: 5px;
+  }
+  /* page5 */
+  #page5{
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+#page5 h4{
+    top:50%;
+    left: 40%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 400;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font1;
+    word-spacing: 5px;
+}
+#page5 button{
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 120px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    top:65%;
+    left: 46%;
+    position: absolute;
+    font-family: font2;
+    cursor: pointer;
+    overflow: hidden;
+ } #page5 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+}
+ #page5 #card1{
+    top:15%;
+    left: 12%;
+    position: absolute;
+   height: 500px;
+   width: 500px;
+   border-radius: 30px;
+   background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/636e58bec0125c0bb24a1993_follow-the-tracks-preview-right-p-800.jpg);
+   background-size: cover;
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+ }
+ #page5 #card2{
+    top:15%;
+    right: 15%;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/61ead79cb3fa023ebbff0c07_Follow%20The%20Track%20-%208-p-1600.jpeg);
+    background-size: cover;
+    transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+  }
+  #page5 h6{
+    top:20%;
+    left: 47%;
+    position: absolute;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font2;
+    word-spacing: 5px;
+  }
+  /* page6 */
+  #page6{
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+#page6 h6{
+    top:20%;
+    left: 40%;
+    position: absolute;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font2;
+    word-spacing: 5px;
+  }
+#page6 h4{
+    top:30%;
+    left: 42%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 400;
+    color: #ECEEF2;
+    text-align-last: center;
+    font-family: font1;
+    word-spacing: 5px;
+}
+#page6 button{
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 120px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+     top: 135%;
+    left: 42%;
+    position: absolute;
+    font-family: font2;
+    cursor: pointer;
+    overflow: hidden;
+ }
+ #page6 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+}
+ #page6 #big{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 80%;
+  width: 60%;
+  border-radius: 50px;
+ }
+ #small1{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    height: 150px;
+    width: 250px;
+    border-radius: 30px;  
+ }
+ #small2{
+    z-index: 10;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    height: 150px;
+    width: 250px;
+    border-radius: 30px;    
+ }
+ #small3{
+    z-index: 10;
+    top:110%;
+    right:25%;
+    position: absolute;
+    height: 180px;
+    width: 250px;
+    border-radius: 30px;   
+ }
+ /* page7 */
+ #page7{
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+ }
+ #top{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top:30%;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#top h1{
+    color: #ECEEF2;
+    font-size: 100px;
+    position: absolute;
+    top: 80%;
+    left: 22%;
+    overflow: hidden;
+}
+#bottom{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    overflow: hidden;
+    /* background-color: green;     */
+}
+#bottom h1{
+    color:#ECEEF2;
+    font-size: 100px;
+    position: absolute;
+    top: -20%;
+    left: 22%;
+    overflow: hidden;
+}
+#center1{
+    position: absolute;
+    top: 80%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   scale: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab4f8e8103db12dfcc0d2_amelia-bts-3.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center2{
+    position: absolute;
+    top: 130%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   border-radius: 50px;
+   background-size: cover;
+   background-position:center;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab4f7c9f2ad517872d693_amelia-bts-8.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center3{
+    position: absolute;
+    top: 180%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab4f72f2ded6177a29eb4_amelia-bts-2.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center4{
+    position: absolute;
+    top: 230%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab52c3d7b97ccba2f9c4a_yellow-jacket-bts-2.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center5{
+    position: absolute;
+    top: 280%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab52c66ad311644665181_yellow-jacket-bts-7.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center6{
+    position: absolute;
+    top: 330%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab4f81b3a3c4fc08b6e94_amelia-bts-1.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center7{
+    position: absolute;
+    top: 380%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab52c4bdb1125e2472594_yellow-jacket-bts-8.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#center8{
+    position: absolute;
+    top: 430%;
+    /* background-color: red; */
+   height: 300px;
+   width: 1000px;
+   background-size: cover;
+   background-position:center;
+   border-radius: 50px;
+   margin-left: 170px;
+   overflow: hidden;
+   opacity: 0;
+   background-image: url("https://assets-global.website-files.com/60eeb025115a75902b86a796/636ab4f82ebd5eb60fb9655c_amelia-bts-4.jpg");
+   transition: all ease cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+/* page8 */
+#page8{
+    height:100vh;
+    width: 100wh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#page8 h4{
+    top:40%;
+    /* position: relative; */
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font2;
+    font-weight: 100;
+    word-spacing: 5px;
+}
+#page8 button{
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 33px;
+    width: 120px;
+    background-color: transparent;
+    color: #ECEEF2;
+    border: 1px solid #ECEEF2;
+    border-radius: 50px;
+    margin-left: 5px;
+    left: 45%;
+    font-family: font2;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ #page8 button:hover{
+    color: #101214;
+    background-color: #ECEEF2;
+    border: 1px solid rgba(255, 0, 0, 0.415);
+}
+ #j{
+    top:53%;
+    left: 50%;
+    font-size: 12px;
+    position: absolute;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font2;
+    font-weight: 100;
+    word-spacing: 5px;
+    animation-name: anime3;
+    animation-duration: 0.2s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+   animation-direction:alternate; 
+ }
+ @keyframes anime3 {
+    from{
+      top: 53%;
+
+    }
+    to{
+        top: 52%;
+    }
+}
+ #z{
+    top:60%;
+    left: 35%;
+    font-size: 50px;
+    position: absolute;
+    color: #ECEEF2;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: font1;
+    font-weight: 100;
+    word-spacing: 5px;
+ }
